@@ -3,7 +3,6 @@ import './services.css';
 import Carride from '../../assets/images/carride.jpg';
 import Party from '../../assets/images/party.jpg';
 
-
 const Services = () => {
   const carImageRef = useRef(null);
   const partyImageRef = useRef(null);
@@ -35,44 +34,42 @@ const Services = () => {
   }, []);
 
   return (
-    <section id='Services' className="ServicesContainer p-6 w-full max-w-full flex flex-col lg:gap-6">
-      <div className="Heading w-full text-center text-white">
-        <p className="text-gradient font-lora lg:text-6xl text-4xl mb-5">Services</p>
+    <section id="Services" className="services-container p-8 bg-gradient-to-r from-blue-900 via-blue-800 to-blue-700 text-white">
+      <div className="heading w-full text-center mb-12">
+        <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-red-600">
+          Our Exclusive Services
+        </h1>
       </div>
 
-      {/* CarContainer */}
-      <div className="CarContainer flex flex-col-reverse md:flex-row w-full items-center justify-between lg:gap-8 gap-4">
+     
+      <div className="service-container flex flex-col md:flex-row items-center justify-center gap-6 mb-12">
         <div
           ref={carImageRef}
-          className={`ImageContainer md:w-1/2 w-full transition-all duration-500 ${
-            isCarImageVisible ? 'filter-none' : 'blur-sm brightness-50'
-          }`}
+          className={`image-container w-full md:w-1/3 transition-all duration-500 ${isCarImageVisible ? 'opacity-100 scale-100' : 'opacity-40 scale-95'}`}
         >
-          <img src={Carride} alt="Car ride" className="Image w-full rounded-lg" />
+          <img src={Carride} alt="Car Ride Service" className="image w-full rounded-lg shadow-xl transform hover:scale-105 transition-all duration-500" />
         </div>
-        <div className="TextContainer glass rounded-3xl p-6 w-full text-left text-white">
-          <h2 className="lg:text-3xl text-xl font-bold mb-4 md:mb-0">Car Ride Service</h2>
-          <p>
+        <div className="text-container bg-white bg-opacity-40 rounded-3xl p-6 w-full md:w-2/4 shadow-xl">
+          <h2 className="text-2xl font-bold mb-4">Car Ride Service</h2>
+          <p className="text-lg leading-relaxed">
             Enjoy a safe and comfortable ride with our top-rated car service. Our professional drivers ensure a smooth and reliable journey to your destination.
           </p>
         </div>
       </div>
 
-      {/* PartyContainer */}
-      <div className="PartyContainer flex flex-col md:flex-row w-full items-center justify-between lg:gap-8 gap-4 py-6">
-        <div className="TextContainer glass rounded-3xl p-6 w-full text-left text-white">
-          <h2 className="lg:text-3xl text-xl font-bold mb-4 md:mb-0">Party Service</h2>
-          <p>
+      
+      <div className="service-container flex flex-col md:flex-row items-center justify-center gap-6">
+        <div className="text-container bg-white bg-opacity-40 rounded-3xl p-6 w-full md:w-2/4 shadow-xl">
+          <h2 className="text-2xl font-bold mb-4">Party Service</h2>
+          <p className="text-lg leading-relaxed">
             Make your celebrations unforgettable with our premium party services. From transportation to event planning, we’ve got you covered for a memorable experience.
           </p>
         </div>
         <div
           ref={partyImageRef}
-          className={`ImageContainer md:w-1/2 w-full mr-2 transition-all duration-500 ${
-            isPartyImageVisible ? 'filter-none' : 'blur-sm brightness-50'
-          }`}
+          className={`image-container w-full md:w-1/3 transition-all duration-500 ${isPartyImageVisible ? 'opacity-100 scale-100' : 'opacity-40 scale-95'}`}
         >
-          <img src={Party} alt="Party Service" className="Image w-full rounded-lg" />
+          <img src={Party} alt="Party Service" className="image w-full rounded-lg shadow-xl transform hover:scale-105 transition-all duration-500" />
         </div>
       </div>
     </section>
