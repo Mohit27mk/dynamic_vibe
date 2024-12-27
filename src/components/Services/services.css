@@ -1,0 +1,17 @@
+
+
+.ImageContainer {
+  flex: 1 1 50%; /* Allow the image to take half of the container */
+  max-width: 500px; /* Limit the maximum width of the image */
+}
+
+
+
+/* .CarContainer:hover .Image {
+  filter: blur(0) brightness(1);
+} */
+
+/* Prevent horizontal overflow */
+body {
+  overflow-x: hidden;
+}
