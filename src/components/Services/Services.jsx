@@ -42,7 +42,7 @@ const Services = () => {
       </div>
 
      
-      <div className="service-container flex flex-col md:flex-row items-center justify-center gap-6 mb-12">
+      <div className="service-container flex flex-col-reverse md:flex-row items-center justify-center gap-6 mb-12">
         <div
           ref={carImageRef}
           className={`image-container w-full md:w-1/3 transition-all duration-500 ${isCarImageVisible ? 'opacity-100 scale-100' : 'opacity-40 scale-95'}`}

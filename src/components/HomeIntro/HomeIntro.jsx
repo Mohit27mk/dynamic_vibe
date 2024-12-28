@@ -14,9 +14,9 @@ const HomeIntro = () => {
                 <p className='m-2'>Arrive in <span className="text-gradient">Style</span></p>
                 <p>Make Memories That Last</p>
             </div>
-            <div className="w-11/12 flex justify-center m-auto lg:gap-8 gap-2">
-                <button className="btn bg-button-bg w-1/6 h-min" onClick={()=> navigate("/carrentals")}><span className="lg:text-2xl text-xl">Car Rentals</span></button>
-                <button className="btn bg-button-bg w-1/6 h-min" onClick={()=> navigate("/partyrentals")}><span className="lg:text-2xl text-xl">Party Rentals</span></button>
+            <div className="flex justify-center m-auto lg:gap-8 gap-4 md:flex-row flex-col">
+                <button className="btn bg-button-bg" onClick={()=> navigate("/carrentals")}><span className="lg:text-2xl text-xl">Car Rentals</span></button>
+                <button className="btn bg-button-bg" onClick={()=> navigate("/partyrentals")}><span className="lg:text-2xl text-xl">Party Rentals</span></button>
             </div>
 
         </section>
