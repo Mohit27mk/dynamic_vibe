@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
-import HomeIntro from '../../components/HomeIntro/HomeIntro';
-import AboutUs from '../../components/AboutUs/AboutUs';
-import Services from '../../components/Services/Services';
-import Reviews from '../../components/Reviews/Reviews';
+import HomeIntro from '../../components/HomePage/HomeIntro/HomeIntro';
+import AboutUs from '../../components/HomePage/AboutUs/AboutUs';
+import Services from '../../components/HomePage/Services/Services';
+import Reviews from '../../components/HomePage/Reviews/Reviews';
 import Footer from '../../components/Footer/Footer';
 
 const Home = () => {
@@ -17,11 +17,11 @@ const Home = () => {
   };
 
   return (
-    <div className="bg-custom-gradient w-screen min-h-screen">
+    <div className="bg-custom-gradient w-screen min-h-screen overflow-hidden">
       <div ref={homeIntroRef}>
       <HomeIntro />
       </div>
-      <div ref={aboutUsRef}>
+       <div ref={aboutUsRef}>
         <AboutUs />
       </div>
       <div ref={servicesRef}>

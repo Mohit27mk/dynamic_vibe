@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.imageWrapper {
+    display: inline-block; 
+    background: linear-gradient(to bottom, #01C5FD, #0144E4); 
+    padding: 4px; 
+    border-radius: 8px; 
+    position: relative;
+}
+
+.imageWrapper img {
+    display: block; 
+    border-radius: 6px; 
+    width: 100%; 
+    height: auto; 
+}
+
+.imageWithGradient {
+    width: 100%; 
+    height: auto; 
+}
+
+.textOverlayContainer {
+    position: absolute;
+    bottom: -20px;
+    left: -40px;
+    background-color: #001036;
+    border-radius: 8px;
+    padding: 20px;
+    width: fit-content;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textOverlay {
+    color: white;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.upper{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.lower{
+    font-size: 1.2rem;
+}
