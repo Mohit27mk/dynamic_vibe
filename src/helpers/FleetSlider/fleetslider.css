@@ -1,0 +1,31 @@
+.imageWrapper {
+    display: inline-block;
+    background: linear-gradient(to bottom, #01C5FD, #0144E4); /* Gradient effect */
+    padding: 4px;
+    border-radius: 8px;
+    position: relative;
+    width: 100%; 
+    max-width: 80%;
+    margin: 0 auto; 
+    height: auto;
+}
+
+.textOverlayContainer-2 {
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    background-color: #001036;
+    border-radius: 8px;
+    padding: 20px;
+    width: fit-content;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textOverlay {
+    color: white;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
