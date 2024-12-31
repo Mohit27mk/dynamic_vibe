@@ -6,6 +6,7 @@ import Services from '../../components/CarRentalsPage/Services/Services';
 import Fleets from '../../components/CarRentalsPage/Fleets/Fleets';
 import Reviews from '../../components/HomePage/Reviews/Reviews';
 import Footer from '../../components/Footer/Footer';
+import ContactUs from '../../components/CarRentalsPage/ContactUs/ContactUs';
 
 const CarRentals = () => {
   const [isFixed, setIsFixed] = useState(false);
@@ -99,6 +100,9 @@ const CarRentals = () => {
       </div>
       <div ref={fleetsRef}>
         <Fleets />
+      </div>
+      <div>
+        <ContactUs/>
       </div>
       <div ref={reviewsRef}>
         <Reviews />
