@@ -4,7 +4,7 @@ import Car1 from '../../../assets/images/Car1.jpg';
 
 const AboutUs = () => {
     return (
-        <section className="AboutContainer overflow-hidden h-full w-screen flex flex-col xl:flex-row items-center justify-between gap-6 xl:gap-12 box-border p-12 py-20"
+        <section className="AboutContainer overflow-hidden h-auto xl:w-screen w-11/12 flex flex-col xl:flex-row items-center justify-between gap-6 xl:gap-12 box-border p-12 py-20 m-auto"
         >
             <div className="textContent p-4 xl:w-1/2 w-full">
                 <div className="abHeading text-gradient text-2xl md:text-3xl">About Us</div>
@@ -20,9 +20,9 @@ const AboutUs = () => {
             <div className="imageContent xl:w-1/2 w-full flex justify-center items-center relative">
                 <div className="imageWrapper relative">
                     <img src={Car1} alt="Luxury Car" className="imageWithGradient" />
-                    <div className="textOverlayContainer flex flex-col justify-center items-center text-sm">
-                        <div className="textOverlay md:text-4xl text-3xl mb-2">+20k</div>
-                        <div className="textOverlay md:text-2xl text-xl ">served customer</div>
+                    <div className="textOverlayContainer flex flex-col justify-center items-center text-sm p-2 xl:p-5 xl:py-10 xl:-bottom-10 xl:-left-16 -bottom-2 -left-12">
+                        <div className="textOverlay md:text-4xl text-base mb-2">+20k</div>
+                        <div className="textOverlay md:text-2xl text-base ">served customer</div>
                     </div>
                 </div>
             </div>

@@ -6,7 +6,7 @@ const ContactUs = () => {
     <div className='ContactUsContainer'>
         <div className="ContactBox xl:w-1/2 w-11/12">
             <div className="title text-gradient">Contact Us</div>
-            <div className="formContainer">
+            <div className="formContainer text-xs xl:text-xl">
                 <form>
                     <div className="formGroup">
                         <label htmlFor="name">Name</label>

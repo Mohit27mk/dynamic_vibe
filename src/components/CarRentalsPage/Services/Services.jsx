@@ -31,8 +31,8 @@ const Services = () => {
             <div className={`imageContent ${isFlexCol ? 'hidden' : 'xl:w-1/2'}`}>
                 <div className="imageWrapper relative">
                     <img src={Car2} alt="Luxury Car" className="imageWithGradient" />
-                    <div className="textOverlayContainer-2 flex flex-col justify-center items-center text-sm">
-                        <div className="textOverlay md:text-3xl text-2xl mb-2">Party Cars</div>
+                    <div className="textOverlayContainer-2 flex flex-col justify-center items-center text-sm xl:bottom-4 xl:left-3 -bottom-7 -left-3">
+                        <div className="textOverlay md:text-3xl text-sm">Party Cars</div>
                     </div>
                 </div>
             </div>
@@ -46,8 +46,8 @@ const Services = () => {
                 <div className="imageContent flex justify-center items-center relative">
                     <div className="imageWrapper relative">
                         <img src={Car3} alt="Luxury Car" className="imageWithGradient" />
-                        <div className="textOverlayContainer-2 flex flex-col justify-center items-center text-sm">
-                            <div className="textOverlay md:text-3xl text-2xl mb-2">Wedding Cars</div>
+                        <div className="textOverlayContainer-2 flex flex-col justify-center items-center text-sm xl:bottom-4 xl:left-3 -bottom-7 -left-3">
+                            <div className="textOverlay md:text-3xl text-sm">Wedding Cars</div>
                         </div>
                     </div>
                 </div>
