@@ -1,23 +1,23 @@
 import React, { useRef, useState, useEffect } from 'react';
-import './carRentals.css'; 
+import './carRentals.css';
 import { useNavigate } from 'react-router-dom';
 import AboutUs from '../../components/CarRentalsPage/AboutUs/AboutUs';
 import Services from '../../components/CarRentalsPage/Services/Services';
 import Fleets from '../../components/CarRentalsPage/Fleets/Fleets';
 import Reviews from '../../components/HomePage/Reviews/Reviews';
-import Footer from '../../components/Footer/Footer';
+import Footer from '../../components/CarRentalsPage/Footer/Footer';
 import ContactUs from '../../components/CarRentalsPage/ContactUs/ContactUs';
 
 const CarRentals = () => {
   const [isFixed, setIsFixed] = useState(false);
-  const logoRef = useRef(null);
-
+  
   // Refs for sections
+  const logoRef = useRef(null);
   const aboutUsRef = useRef(null);
   const servicesRef = useRef(null);
   const fleetsRef = useRef(null);
   const reviewsRef = useRef(null);
-
+  const contactUsRef = useRef(null);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -49,9 +49,9 @@ const CarRentals = () => {
   };
 
   return (
-    <div className='bg-custom-gradient-2 w-screen min-h-screen overflow-hidden'>
+    <div className='HomeContainer bg-custom-gradient-2 w-screen min-h-screen overflow-x-hidden'>
 
-      <section className="pt-6 mb-16 overflow-x-hidden flex flex-col items-center">
+      <section className=" flex flex-col items-center">
         {/* Logo Section */}
         <div
           ref={logoRef}
@@ -63,24 +63,35 @@ const CarRentals = () => {
 
         {/* Navbar */}
         <div
-          className={`Navbar w-full bg-black/50 text-white flex flex-row flex-wrap justify-center gap-12 items-center p-4 shadow-lg ${isFixed ? 'fixed-navbar' : ''}`}
+          className={`Navbar w-full bg-black/50 text-white flex flex-row flex-wrap justify-center md:gap-12 gap-1 items-center shadow-lg ${isFixed ? 'fixed-navbar' : ''}`}
         >
           <span onClick={() => scrollToSection(logoRef)}>Home</span>
           <span onClick={() => scrollToSection(fleetsRef)}>Our Fleet</span>
           <div className='dropdown'>
             <span>Limousine Services</span>
-            <div className='dropdown-content'>
-              <a onClick={() => navigate("/carRentals/")}>Airport Limousine Service</a>
-              <a onClick={() => navigate("#")}>Wedding Limousine Service</a>
-              <a onClick={() => navigate("#")}>Prom Limousine Service</a>
-              <a onClick={() => navigate("#")}>Winery Tours</a>
-              <a onClick={() => navigate("#")}>Nights Out on the Town</a>
-              <a onClick={() => navigate("#")}>Bachelor and Bachelorette Parties</a>
-              <a onClick={() => navigate("#")}>Corporate</a>
+            <div className="dropdown-content">
+              <a onClick={() => navigate('/limousine/Airport')}>Airport Limousine Service</a>
+              <a onClick={() => navigate('/limousine/Wedding')}>Wedding Limousine Service</a>
+              <a onClick={() => navigate('/limousine/Prom')}>Prom Limousine Service</a>
+              <a onClick={() => navigate('/limousine/Winery')}>Winery Tours</a>
+              <a onClick={() => navigate('/limousine/Nights')}>Nights Out on the Town</a>
+              <a onClick={() => navigate('/limousine/Bachelor')}>Bachelor and Bachelorette Parties</a>
+              <a onClick={() => navigate('/limousine/Csorporate')}>Corporate</a>
             </div>
           </div>
           <span onClick={() => scrollToSection(reviewsRef)}>Reviews</span>
-          <span onClick={() => scrollToSection(aboutUsRef)}>About Us</span>
+          <div className='dropdown'>
+            <span>About Us</span>
+            <div className='dropdown-content'>
+              <a onClick={()=>navigate('#')}>FAQ</a>
+            </div>
+          </div>
+          <div className='dropdown'>
+            <span>Contact Us</span>
+            <div className='dropdown-content'>
+            <a onClick={()=>navigate('#')}>Request a Call back</a>
+            </div>
+          </div>
         </div>
 
         <div className="Heading text-4xl md:text-6xl text-white font-semibold text-center block m-8">
@@ -101,8 +112,8 @@ const CarRentals = () => {
       <div ref={fleetsRef}>
         <Fleets />
       </div>
-      <div>
-        <ContactUs/>
+      <div ref={contactUsRef}>
+        <ContactUs />
       </div>
       <div ref={reviewsRef}>
         <Reviews />
@@ -112,9 +123,8 @@ const CarRentals = () => {
         scrollToSection={scrollToSection}
         aboutUsRef={aboutUsRef}
         servicesRef={servicesRef}
-        fleetsRef={fleetsRef}
-        reviewsRef={reviewsRef}
         homeIntroRef={logoRef}
+        contactUsRef={contactUsRef}
       />
     </div>
   );

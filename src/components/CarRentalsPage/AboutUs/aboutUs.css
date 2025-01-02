@@ -34,16 +34,11 @@
     width: 100%; 
     height: auto; 
 }
-
 .textOverlayContainer {
     position: absolute;
-    bottom: -40px;
-    left: -60px;
+    background-color: #001036;
     border: 2px solid #0144E4;
     border-radius: 8px;
-    padding: 20px;
-    padding-top: 40px;
-    padding-bottom: 40px;
     width: fit-content;
     height: auto;
     display: flex;

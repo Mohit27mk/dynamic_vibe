@@ -30,7 +30,6 @@
 .ContactBox {
     position: relative;
     z-index: 1; 
-    min-height: 600px; 
     max-height: 90%;
     background-color: #000d2a; 
     border-radius: 8px;
@@ -46,7 +45,6 @@
 
 .title {
     font-size: xx-large;
-    margin-bottom: 1.5rem; 
 }
 
 .formContainer {
@@ -57,7 +55,6 @@
     height: 90%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-top: 1rem; 
-    font-size: 1.5rem;
 }
 
 

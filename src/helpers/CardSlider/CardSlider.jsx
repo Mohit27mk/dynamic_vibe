@@ -39,7 +39,7 @@ const CardSlider = () => {
                 <Slider {...settings}>
                     {data.map((d, index) => (
                         <div key={index} 
-                             className="h-[450px] flex flex-col text-black rounded-xl shadow-lg transition-all duration-300 hover:scale-105"
+                             className="h-auto flex flex-col text-black rounded-xl shadow-lg transition-all duration-300 hover:scale-105"
                              style={{ background: 'linear-gradient(to bottom right, #0a2540, #2c3e50)' }}>
                             <div className="rounded-t-xl flex justify-center items-center h-56" 
                                  style={{ backgroundImage: 'linear-gradient(to top right, #1a2a5a, #0b345f)' }}>
