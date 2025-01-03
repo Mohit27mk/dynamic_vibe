@@ -66,13 +66,13 @@ const LimousineService = () => {
                         <div className='dropdown'>
                             <span>Limousine Services</span>
                             <div className="dropdown-content">
-                                <a onClick={() => navigate('/limousine/airport')}>Airport Limousine Service</a>
-                                <a onClick={() => navigate('/limousine/wedding')}>Wedding Limousine Service</a>
-                                <a onClick={() => navigate('/limousine/prom')}>Prom Limousine Service</a>
-                                <a onClick={() => navigate('/limousine/winery')}>Winery Tours</a>
-                                <a onClick={() => navigate('/limousine/nights')}>Nights Out on the Town</a>
-                                <a onClick={() => navigate('/limousine/bachelor')}>Bachelor and Bachelorette Parties</a>
-                                <a onClick={() => navigate('/limousine/corporate')}>Corporate</a>
+                                <a onClick={() => navigate('/limousine/Airport')}>Airport Limousine Service</a>
+                                <a onClick={() => navigate('/limousine/Wedding')}>Wedding Limousine Service</a>
+                                <a onClick={() => navigate('/limousine/Prom')}>Prom Limousine Service</a>
+                                <a onClick={() => navigate('/limousine/Winery')}>Winery Tours</a>
+                                <a onClick={() => navigate('/limousine/Nights')}>Nights Out on the Town</a>
+                                <a onClick={() => navigate('/limousine/Bachelor')}>Bachelor and Bachelorette Parties</a>
+                                <a onClick={() => navigate('/limousine/Corporate')}>Corporate</a>
                             </div>
                         </div>
                         <div className='dropdown'>

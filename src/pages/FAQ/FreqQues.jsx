@@ -79,7 +79,6 @@ const LimousineService = () => {
                                 <a onClick={() => navigate('/limousine/Corporate')}>Corporate</a>
                             </div>
                         </div>
-                        <span onClick={() => scrollToSection(reviewsRef)}>Reviews</span>
                         <div className='dropdown'>
                             <span>About Us</span>
                             <div className='dropdown-content'>
