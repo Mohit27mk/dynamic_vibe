@@ -7,8 +7,9 @@ import './App.css';
 import Home from "./pages/home/Home";
 import CarRentals from "./pages/carRentals/CarRentals";
 import PartyRentals from "./pages/partyRentals/PartyRentals"
-import ContactUs from "./components/HomePage/ContactUs/ContactUs";
+import ContactUs from "./pages/ContactUs/ContactUs";
 import LimousineService from "./pages/LimousineServices/LimousineService";
+import FAQ from "./pages/FAQ/FreqQues.jsx";
 
 
 
@@ -20,8 +21,9 @@ function App() {
         <Route path="/" element={<Home/>} />
         <Route path="/carrentals" element={<CarRentals/>} />
         <Route path="/partyrentals" element={<PartyRentals/>} />
-        <Route path="/contact" element={<ContactUs/>} />
         <Route path="/limousine/:serviceType" element={<LimousineService />} />
+        <Route path="/contact" element={<ContactUs/>} />
+        <Route path="/faq" element={<FAQ/>} />
 
     </Routes>
     </BrowserRouter>

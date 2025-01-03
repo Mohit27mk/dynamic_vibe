@@ -76,20 +76,20 @@ const CarRentals = () => {
               <a onClick={() => navigate('/limousine/Winery')}>Winery Tours</a>
               <a onClick={() => navigate('/limousine/Nights')}>Nights Out on the Town</a>
               <a onClick={() => navigate('/limousine/Bachelor')}>Bachelor and Bachelorette Parties</a>
-              <a onClick={() => navigate('/limousine/Csorporate')}>Corporate</a>
+              <a onClick={() => navigate('/limousine/Corporate')}>Corporate</a>
             </div>
           </div>
           <span onClick={() => scrollToSection(reviewsRef)}>Reviews</span>
           <div className='dropdown'>
             <span>About Us</span>
             <div className='dropdown-content'>
-              <a onClick={()=>navigate('#')}>FAQ</a>
+              <a onClick={()=>navigate('/faq')}>FAQ</a>
             </div>
           </div>
           <div className='dropdown'>
             <span>Contact Us</span>
             <div className='dropdown-content'>
-            <a onClick={()=>navigate('#')}>Request a Call back</a>
+            <a onClick={()=>navigate('/contact')}>Request a Call back</a>
             </div>
           </div>
         </div>

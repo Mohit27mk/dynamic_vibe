@@ -12,8 +12,6 @@ const LimousineService = () => {
   // Refs for sections
   const logoRef = useRef(null);
   const aboutUsRef = useRef(null);
-  const servicesRef = useRef(null);
-  const fleetsRef = useRef(null);
   const reviewsRef = useRef(null);
   const contactUsRef = useRef(null);
   const navigate = useNavigate();
@@ -40,11 +38,16 @@ const LimousineService = () => {
     };
   }, []);
 
+  const scrollToSection = (ref) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const { serviceType } = useParams();
   const normalizedServiceType = serviceType ? serviceType.charAt(0).toUpperCase() + serviceType.slice(1) : '';  // Capitalize first letter
 
-  // Check if the serviceType exists in data
-  const serviceData = data[normalizedServiceType] ? data[normalizedServiceType][0] : null;
+  const serviceData = data[serviceType] ? data[serviceType][0] : null;
 
   if (!serviceData) {
     return <div>Service not found.</div>;
@@ -69,30 +72,29 @@ const LimousineService = () => {
             className={`Navbar w-full bg-black/50 text-white flex flex-row flex-wrap justify-center md:gap-12 gap-1 items-center shadow-lg ${isFixed ? 'fixed-navbar' : ''}`}
           >
             <span onClick={() => navigate('/carRentals/')}>Home</span>
-            <span>Our Fleet</span>
             <div className='dropdown'>
               <span>Limousine Services</span>
               <div className="dropdown-content">
-                <a onClick={() => navigate('/limousine/airport')}>Airport Limousine Service</a>
-                <a onClick={() => navigate('/limousine/wedding')}>Wedding Limousine Service</a>
-                <a onClick={() => navigate('/limousine/prom')}>Prom Limousine Service</a>
-                <a onClick={() => navigate('/limousine/winery')}>Winery Tours</a>
-                <a onClick={() => navigate('/limousine/nights')}>Nights Out on the Town</a>
-                <a onClick={() => navigate('/limousine/bachelor')}>Bachelor and Bachelorette Parties</a>
-                <a onClick={() => navigate('/limousine/corporate')}>Corporate</a>
+                <a onClick={() => navigate('/limousine/Airport')}>Airport Limousine Service</a>
+                <a onClick={() => navigate('/limousine/Wedding')}>Wedding Limousine Service</a>
+                <a onClick={() => navigate('/limousine/Prom')}>Prom Limousine Service</a>
+                <a onClick={() => navigate('/limousine/Winery')}>Winery Tours</a>
+                <a onClick={() => navigate('/limousine/Nights')}>Nights Out on the Town</a>
+                <a onClick={() => navigate('/limousine/Bachelor')}>Bachelor and Bachelorette Parties</a>
+                <a onClick={() => navigate('/limousine/Corporate')}>Corporate</a>
               </div>
             </div>
-            <span>Reviews</span>
+            <span onClick={() => scrollToSection(reviewsRef)}>Reviews</span>
             <div className='dropdown'>
               <span>About Us</span>
               <div className='dropdown-content'>
-                <a onClick={() => navigate('#')}>FAQ</a>
+                <a onClick={() => navigate('/faq')}>FAQ</a>
               </div>
             </div>
             <div className='dropdown'>
               <span>Contact Us</span>
               <div className='dropdown-content'>
-                <a onClick={() => navigate('#')}>Request a Call back</a>
+                <a onClick={() => navigate('/contact')}>Request a Call back</a>
               </div>
             </div>
           </div>
@@ -120,7 +122,7 @@ const LimousineService = () => {
 
           {/* Content-Body */}
           <div className='contentBody w-full flex flex-row p-6 items-center '>
-            <div className="graphicSec inline-block bg-orange-300 p-4 m-4 w-1/4 h-1/4 text-white flex flex-col justify-center items-center text-center">
+            <div className="graphicSec inline-block bg-orange-300 p-4 m-4 w-1/4 h-1/4 text-white flex flex-col justify-center items-center text-center font-lobster">
               <Car sx={{ fontSize: '100px' }} />
               <div className="renderedTitle text-2xl">{serviceData.cardText}</div>
               <div>Call Us Today</div>
@@ -137,7 +139,10 @@ const LimousineService = () => {
             </div>
           </div>
         </section>
-        <Reviews/>
+
+        <div ref={reviewsRef}>
+          <Reviews />
+        </div>
       </div>
     </div>
   );

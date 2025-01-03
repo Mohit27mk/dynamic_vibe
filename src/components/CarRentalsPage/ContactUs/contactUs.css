@@ -57,7 +57,6 @@
     margin-top: 1rem; 
 }
 
-
 .formGroup {
     margin-bottom: 1rem;
     text-align: left;
@@ -70,7 +69,7 @@ label {
     color: #333;
 }
 
-input, textarea {
+input, textarea, select {
     width: 100%;
     padding: 0.75rem;
     border: 1px solid #ccc;
@@ -78,10 +77,21 @@ input, textarea {
     color: #333;
 }
 
-input:focus, textarea:focus {
+input:focus, textarea:focus, select:focus {
     outline: none;
     border-color: #0f1de0;
     box-shadow: 0 0 5px rgba(15, 29, 224, 0.5);
+}
+
+select {
+    appearance: none;
+    background-color: white;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+select option {
+    padding: 0.5rem;
 }
 
 .submitButton {
@@ -93,9 +103,9 @@ input:focus, textarea:focus {
     transition: background-color 0.3s ease;
 }
 
-.submitButton:hover{
+.submitButton:hover {
     font-weight: bold;
     background-image: linear-gradient(to right, #01C5FD, #0144E4);
-  background-clip: text;
-  color: transparent;
+    background-clip: text;
+    color: transparent;
 }
