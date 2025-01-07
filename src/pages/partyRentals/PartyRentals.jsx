@@ -3,10 +3,10 @@ import './partyRentals.css';
 import { useNavigate } from 'react-router-dom';
 import AboutUs from '../../components/CarRentalsPage/AboutUs/AboutUs';
 import Services from '../../components/CarRentalsPage/Services/Services';
-import Fleets from '../../components/CarRentalsPage/Fleets/Fleets';
 import Reviews from '../../components/HomePage/Reviews/Reviews';
 import Footer from '../../components/CarRentalsPage/Footer/Footer';
 import ContactUs from '../../components/CarRentalsPage/ContactUs/ContactUs';
+import TentPackages from '../../components/PartyRentalsPage/TentPackages';
 
 const PartyRentals = () => {
   const [isFixed, setIsFixed] = useState(false);
@@ -15,7 +15,6 @@ const PartyRentals = () => {
     const logoRef = useRef(null);
     const aboutUsRef = useRef(null);
     const servicesRef = useRef(null);
-    const fleetsRef = useRef(null);
     const reviewsRef = useRef(null);
     const quoteRequestRef = useRef(null);
     const contactUsRef = useRef(null);
@@ -173,8 +172,11 @@ const PartyRentals = () => {
       <div ref={servicesRef}>
         <Services />
       </div>
-      <div ref={fleetsRef}>
+      {/* <div ref={fleetsRef}>
         <Fleets />
+      </div> */}
+      <div>
+        <TentPackages />
       </div>
       <div ref={contactUsRef}>
         <ContactUs />
