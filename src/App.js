@@ -12,6 +12,11 @@ import LimousineService from "./pages/LimousineServices/LimousineService";
 import FAQ from "./pages/FAQ/FreqQues.jsx";
 import QuoteRequest from './pages/QuoteRequest/QuoteRequest';
 import AboutUs from './pages/AboutUs/AboutUs';
+import Login from "./admin/login/Login.jsx";
+import  CarRental from "./admin/CarRental/CarRental.jsx";
+import  PartyRental from "./admin/partyRental/PartyRental.jsx";
+import  Users from "./admin/users/Users.jsx";
+
 
 
 function App() {
@@ -26,6 +31,10 @@ function App() {
         <Route path="/request" element={<QuoteRequest />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/faq" element={<FAQ/>} />
+        <Route path="/admin/login" element={<Login/>} />
+        <Route path="/admin/dashboard/car-rental" element={<CarRental/>} />
+        {/* <Route path="/admin/dashboard/party-rental" element={<PartyRental/>} />
+        <Route path="/admin/dashboard/users" element={<Users/>} /> */}
     </Routes>
     </BrowserRouter>
   );
