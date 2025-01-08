@@ -1,8 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Instagram, Facebook, Face } from '@mui/icons-material';
+import { Instagram, Facebook } from '@mui/icons-material';
 
-const Footer = ({ scrollToSection, aboutUsRef, servicesRef, homeIntroRef, contactUsRef }) => {
+const Footer = ({ scrollToSection, aboutUsRef, servicesRef, homeIntroRef, contactUsRef,quoteRequestRef }) => {
   const navigate = useNavigate();
 
   return (
@@ -23,7 +23,7 @@ const Footer = ({ scrollToSection, aboutUsRef, servicesRef, homeIntroRef, contac
           >
             Services
           </span>
-          <span className="cursor-pointer hover:underline" onClick={() => scrollToSection(contactUsRef)}>Contact Us</span>
+          <span className="cursor-pointer hover:underline" onClick={() => scrollToSection(quoteRequestRef)}>Contact Us</span>
         </div>
 
         {/* Footer Logo */}
