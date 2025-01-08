@@ -1,6 +1,5 @@
 import React from 'react';
 import './contactUs.css';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 const ContactUs = () => {
   return (

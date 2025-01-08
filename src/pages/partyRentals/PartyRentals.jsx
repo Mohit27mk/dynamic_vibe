@@ -5,8 +5,8 @@ import AboutUs from '../../components/CarRentalsPage/AboutUs/AboutUs';
 import Services from '../../components/CarRentalsPage/Services/Services';
 import Reviews from '../../components/HomePage/Reviews/Reviews';
 import Footer from '../../components/CarRentalsPage/Footer/Footer';
-import ContactUs from '../../components/CarRentalsPage/ContactUs/ContactUs';
 import TentPackages from '../../components/PartyRentalsPage/TentPackages';
+import logo from "../../assets/images/logo.png"
 
 const PartyRentals = () => {
   const [isFixed, setIsFixed] = useState(false);
@@ -58,8 +58,8 @@ const PartyRentals = () => {
           ref={logoRef}
           className="w-full h-1/5 text-white flex flex-col justify-center items-center gap-2 mb-16"
         >
-          <div className="logo text-6xl font-lobster">Logo</div>
-          <div className="tagline text-lg font-light">Space for tagline</div>
+          <img src={logo} alt="Logo" className="logo w-40 h-32" />
+          {/* <div className="tagline text-lg font-light">Space for tagline</div> */}
         </div>
 
         {/* Navbar */}
@@ -148,13 +148,7 @@ const PartyRentals = () => {
             </div>
           </div>
           <span onClick={() => scrollToSection(reviewsRef)}>Reviews</span>
-          <span onClick={() => scrollToSection(quoteRequestRef)}>Quote Request</span> 
-          {/* <div className='dropdown'>
-            <span>Contact Us</span>
-            <div className='dropdown-content'>
-            <a onClick={()=>navigate('/contact')}>Request a Call back</a>
-            </div>
-          </div> */}
+          <span onClick={()=>navigate('/request')}>Quote Request</span> 
         </div>
 
         <div className="Heading text-4xl md:text-6xl text-white font-semibold text-center block m-8">
@@ -165,32 +159,25 @@ const PartyRentals = () => {
           <p>Arrive in style and make your special moments unforgettable with our premium wedding and party car rentals. Experience luxury, comfort, and elegance for every occasion.</p>
         </div>
       </section>
-
       <div ref={aboutUsRef}>
         <AboutUs />
       </div>
       <div ref={servicesRef}>
         <Services />
       </div>
-      {/* <div ref={fleetsRef}>
-        <Fleets />
-      </div> */}
       <div>
         <TentPackages />
-      </div>
-      <div ref={contactUsRef}>
-        <ContactUs />
       </div>
       <div ref={reviewsRef}>
         <Reviews />
       </div>
-
       <Footer
         scrollToSection={scrollToSection}
         aboutUsRef={aboutUsRef}
         servicesRef={servicesRef}
         homeIntroRef={logoRef}
         contactUsRef={contactUsRef}
+        quoteRequestRef={quoteRequestRef}
       />
     </div>
   )
