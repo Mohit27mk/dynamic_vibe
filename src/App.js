@@ -11,6 +11,7 @@ import ContactUs from "./pages/ContactUs/ContactUs";
 import LimousineService from "./pages/LimousineServices/LimousineService";
 import FAQ from "./pages/FAQ/FreqQues.jsx";
 import QuoteRequest from './pages/QuoteRequest/QuoteRequest';
+import OurStory from './pages/OurStory/OurStory';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/limousine/:serviceType" element={<LimousineService />} />
         <Route path="/contact" element={<ContactUs/>} />
         <Route path="/request" element={<QuoteRequest />} />
+        <Route path="/ourstory" element={<OurStory />} />
         <Route path="/faq" element={<FAQ/>} />
     </Routes>
     </BrowserRouter>
