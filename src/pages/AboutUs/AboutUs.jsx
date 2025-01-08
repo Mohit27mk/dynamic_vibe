@@ -1,8 +1,8 @@
 import React from 'react';
-import './ourstory.css'
+import './aboutus.css'
 import Navbar from '../../components/PartyRentalsPage/Navbar';
 
-const OurStory = () => {
+const AboutUs = () => {
   return (
     <>
       <div className='HomeContainer bg-custom-gradient-2 w-screen min-h-screen overflow-x-hidden'>
@@ -87,4 +87,4 @@ const OurStory = () => {
   )
 }
 
-export default OurStory
+export default AboutUs

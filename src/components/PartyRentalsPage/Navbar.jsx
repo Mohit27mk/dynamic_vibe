@@ -55,14 +55,7 @@ const Navbar = () => {
           className={`Navbar w-full bg-black/50 text-white flex flex-row flex-wrap justify-center md:gap-12 gap-1 items-center shadow-lg ${isFixed ? 'fixed-navbar' : ''}`}
         >
           <span onClick={()=>navigate('/')}>Home</span>
-          <div className='dropdown'>
-            <span>About Us</span>
-            <div className='dropdown-content'>
-              <a onClick={()=>navigate('/ourstory')}>Our Story</a>
-              <a onClick={()=>navigate('/faq')}>Areas We Serve</a>
-              <a onClick={()=>navigate('/faq')}>Terms And Conditions</a>
-            </div>
-          </div>
+          <span onClick={()=>navigate('/aboutus')}>About Us</span> 
           <div className='dropdown'>
             <span>Tent Styles</span>
             <div className='dropdown-content'>
