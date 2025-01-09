@@ -1,21 +1,35 @@
-import React from 'react';
+import {useRef} from 'react';
 import './aboutus.css'
 import Navbar from '../../components/PartyRentalsPage/Navbar';
+import Reviews from '../../components/HomePage/Reviews/Reviews';
+import Footer from '../../components/CarRentalsPage/Footer/Footer';
 
 const AboutUs = () => {
+  const logoRef = useRef(null);
+  const aboutUsRef = useRef(null);
+  const servicesRef = useRef(null);
+  const quoteRequestRef = useRef(null);
+  const contactUsRef = useRef(null);
+  
+  const scrollToSection = (ref) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
       <div className='HomeContainer bg-custom-gradient-2 w-screen min-h-screen overflow-x-hidden'>
         <Navbar />
         {/* About Us Section */}
-        <section className="aboutUsSection text-white py-20 px-6 md:px-20">
-          <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
+        <section className="aboutUsSection text-white py-20 px-6 md:px-40">
+          <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-10 md:gap-2">
             {/* Left Image */}
             <div className="w-full md:w-2/5">
               <img
                 src="https://litentrentals.com/wp-content/uploads/2023/01/About-Sq-1.jpg"
                 alt="Long Island Tent & Party Rentals"
-                className="rounded-lg shadow-lg w-full h-auto"
+                className="rounded-lg shadow-lg"
               />
             </div>
 
@@ -43,9 +57,8 @@ const AboutUs = () => {
             We are a one-stop shop with a production and decor division to make your dream event a reality. To maintain the quality of our equipment, we have invested in state-of-the-art washing machines for our wedding tents and chairs, ensuring a clean and safe event atmosphere for all our clients. Whether it’s a wedding, party, or corporate event, we pride ourselves on providing exceptional service and products to make your day special.
           </p>
         </section>
-
         {/* Testimonials Section */}
-        <section className="testimonialsSection text-white py-20 px-6 md:px-20">
+        {/* <section className="testimonialsSection text-white py-20 px-6 md:px-20">
           <h2 className="text-3xl md:text-5xl font-semibold text-gradient mb-10 text-center">What Our Clients Say</h2>
           <div className="testimonialGrid grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             <blockquote className="bg-black/50 p-6 rounded-lg shadow-lg">
@@ -73,7 +86,10 @@ const AboutUs = () => {
               <footer className="mt-4 text-right">— Christine O.</footer>
             </blockquote>
           </div>
-        </section>
+        </section> */}
+        <div>
+         <Reviews />
+        </div>
 
         {/* Who We Serve Section */}
         <section className="whoWeServeSection bg-black/50 text-white py-20 px-6 md:px-20 text-center">
@@ -82,6 +98,14 @@ const AboutUs = () => {
             Long Island Tent & Party Rentals proudly serves Nassau and Suffolk County, Long Island, NY, towns and hamlets with exceptional tent and party rental services. We are one of the largest companies serving the Long Island and Queens areas with a 50,000 square foot facility, a huge inventory, and a fleet of trucks ready to accommodate small to large events.
           </p>
         </section>
+        <Footer
+        scrollToSection={scrollToSection}
+        aboutUsRef={aboutUsRef}
+        servicesRef={servicesRef}
+        homeIntroRef={logoRef}
+        contactUsRef={contactUsRef}
+        quoteRequestRef={quoteRequestRef}
+      />
       </div>
     </>
   )

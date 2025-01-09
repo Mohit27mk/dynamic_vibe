@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Instagram, Facebook } from '@mui/icons-material';
+import logo from "../../../assets/images/logo.png";
 
 const Footer = ({ scrollToSection, aboutUsRef, servicesRef, homeIntroRef, contactUsRef,quoteRequestRef }) => {
   const navigate = useNavigate();
@@ -31,7 +32,7 @@ const Footer = ({ scrollToSection, aboutUsRef, servicesRef, homeIntroRef, contac
           className="FooterLogo font-lobster text-gradient text-4xl md:mr-6 cursor-pointer"
           onClick={() => scrollToSection(homeIntroRef)}
         >
-          Logo
+          <img src={logo} alt="Logo" className="logo w-20 h-12" />
         </span>
       </div>
 
