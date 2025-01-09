@@ -12,6 +12,12 @@ import LimousineService from "./pages/LimousineServices/LimousineService";
 import FAQ from "./pages/FAQ/FreqQues.jsx";
 import QuoteRequest from './pages/QuoteRequest/QuoteRequest';
 import AboutUs from './pages/AboutUs/AboutUs';
+import WhiteFrameTents from './pages/WhiteFrameTents/WhiteFrameTents';
+import ClearTopTents from './pages/ClearTopTents/ClearTopTents';
+import TentLiner from './pages/TentLiner/TentLiner';
+import Skylight from './pages/Skylight/Skylight';
+import Sailcloth from './pages/Sailcloth/Sailcloth';
+import Swag from './pages/Swag/Swag';
 
 
 function App() {
@@ -25,6 +31,12 @@ function App() {
         <Route path="/contact" element={<ContactUs/>} />
         <Route path="/request" element={<QuoteRequest />} />
         <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/whiteframetents" element={<WhiteFrameTents/>} />
+        <Route path="/cleartoptents" element={<ClearTopTents/>} />
+        <Route path="/tentliner" element={<TentLiner/>} />
+        <Route path="/skylight" element={<Skylight/>} />
+        <Route path="/sailcloth" element={<Sailcloth/>} />
+        <Route path="/swag" element={<Swag/>} />
         <Route path="/faq" element={<FAQ/>} />
     </Routes>
     </BrowserRouter>
