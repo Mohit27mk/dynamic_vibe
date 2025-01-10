@@ -18,6 +18,7 @@ import TentLiner from './pages/TentLiner/TentLiner';
 import Skylight from './pages/Skylight/Skylight';
 import Sailcloth from './pages/Sailcloth/Sailcloth';
 import Swag from './pages/Swag/Swag';
+import TentPackages from './pages/TentPackages/TentPackages';
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
         <Route path="/skylight" element={<Skylight/>} />
         <Route path="/sailcloth" element={<Sailcloth/>} />
         <Route path="/swag" element={<Swag/>} />
+        <Route path="/tentpackages" element={<TentPackages/>} />
         <Route path="/faq" element={<FAQ/>} />
     </Routes>
     </BrowserRouter>

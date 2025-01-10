@@ -4,7 +4,6 @@ import logo from "../../assets/images/logo.png"
 
 const Navbar = () => {
     const [isFixed, setIsFixed] = useState(false);
-    
     const logoRef = useRef(null); // Refs for sections
     const reviewsRef = useRef(null);
     const navigate = useNavigate();
@@ -70,7 +69,7 @@ const Navbar = () => {
           <div className='dropdown'>
             <span>Packages</span>
             <div className="dropdown-content">
-              <a onClick={() => navigate('/limousine/Airport')}>Tent Packages</a>
+              <a onClick={() => navigate('/tentpackages')}>Tent Packages</a>
               <a onClick={() => navigate('/limousine/Wedding')}>Tent & Liner Package</a>
               <a onClick={() => navigate('/limousine/Prom')}>Clear Top Packages</a>
               <a onClick={() => navigate('/limousine/Winery')}>Sailcloth Packages</a>
