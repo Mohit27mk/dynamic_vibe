@@ -16,6 +16,7 @@ import Login from "./admin/login/Login.jsx";
 import  CarRental from "./admin/CarRental/CarRental.jsx";
 import  PartyRental from "./admin/partyRental/PartyRental.jsx";
 import  Users from "./admin/users/Users.jsx";
+import  UserProfile from "./admin/userProfile/UserProfile.jsx";
 
 
 
@@ -33,8 +34,9 @@ function App() {
         <Route path="/faq" element={<FAQ/>} />
         <Route path="/admin/login" element={<Login/>} />
         <Route path="/admin/dashboard/car-rental" element={<CarRental/>} />
-        {/* <Route path="/admin/dashboard/party-rental" element={<PartyRental/>} />
-        <Route path="/admin/dashboard/users" element={<Users/>} /> */}
+        <Route path="/admin/dashboard/party-rental" element={<PartyRental/>} />
+        <Route path="/admin/dashboard/users" element={<Users/>} />
+        <Route path="/admin/dashboard/user-profile" element={<UserProfile/>} />
     </Routes>
     </BrowserRouter>
   );
