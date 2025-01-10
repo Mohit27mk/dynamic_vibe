@@ -12,6 +12,13 @@ import LimousineService from "./pages/LimousineServices/LimousineService";
 import FAQ from "./pages/FAQ/FreqQues.jsx";
 import QuoteRequest from './pages/QuoteRequest/QuoteRequest';
 import AboutUs from './pages/AboutUs/AboutUs';
+import WhiteFrameTents from './pages/WhiteFrameTents/WhiteFrameTents';
+import ClearTopTents from './pages/ClearTopTents/ClearTopTents';
+import TentLiner from './pages/TentLiner/TentLiner';
+import Skylight from './pages/Skylight/Skylight';
+import Sailcloth from './pages/Sailcloth/Sailcloth';
+import Swag from './pages/Swag/Swag';
+import TentPackages from './pages/TentPackages/TentPackages';
 import Login from "./admin/login/Login.jsx";
 import  CarRental from "./admin/CarRental/CarRental.jsx";
 import  PartyRental from "./admin/partyRental/PartyRental.jsx";
@@ -31,6 +38,13 @@ function App() {
         <Route path="/contact" element={<ContactUs/>} />
         <Route path="/request" element={<QuoteRequest />} />
         <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/whiteframetents" element={<WhiteFrameTents/>} />
+        <Route path="/cleartoptents" element={<ClearTopTents/>} />
+        <Route path="/tentliner" element={<TentLiner/>} />
+        <Route path="/skylight" element={<Skylight/>} />
+        <Route path="/sailcloth" element={<Sailcloth/>} />
+        <Route path="/swag" element={<Swag/>} />
+        <Route path="/tentpackages" element={<TentPackages/>} />
         <Route path="/faq" element={<FAQ/>} />
         <Route path="/admin/login" element={<Login/>} />
         <Route path="/admin/dashboard/car-rental" element={<CarRental/>} />
