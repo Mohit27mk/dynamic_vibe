@@ -4,7 +4,6 @@ import logo from "../../assets/images/logo.png"
 
 const Navbar = () => {
     const [isFixed, setIsFixed] = useState(false);
-    
     const logoRef = useRef(null); // Refs for sections
     const reviewsRef = useRef(null);
     const navigate = useNavigate();
@@ -44,7 +43,7 @@ const Navbar = () => {
         {/* Logo Section */}
         <div
           ref={logoRef}
-          className="w-full h-1/5 text-white flex flex-col justify-center items-center gap-2 mb-16"
+          className="w-full h-1/5 text-white flex flex-col justify-center items-center gap-2 mb-16 mt-10"
         >
           <img src={logo} alt="Logo" className="logo w-40 h-32" />
           {/* <div className="tagline text-lg font-light">Space for tagline</div> */}
@@ -59,18 +58,18 @@ const Navbar = () => {
           <div className='dropdown'>
             <span>Tent Styles</span>
             <div className='dropdown-content'>
-              <a onClick={()=>navigate('/faq')}>White Frame Tents</a>
-              <a onClick={()=>navigate('/faq')}>Clear Top Tents</a>
-              <a onClick={()=>navigate('/faq')}>Tent Liner</a>
-              <a onClick={()=>navigate('/faq')}>Skylight</a>
-              <a onClick={()=>navigate('/faq')}>Sailcloth</a>
-              <a onClick={()=>navigate('/faq')}>Swag</a>
+              <a onClick={()=>navigate('/whiteframetents')}>White Frame Tents</a>
+              <a onClick={()=>navigate('/cleartoptents')}>Clear Top Tents</a>
+              <a onClick={()=>navigate('/tentliner')}>Tent Liner</a>
+              <a onClick={()=>navigate('/skylight')}>Skylight</a>
+              <a onClick={()=>navigate('/sailcloth')}>Sailcloth</a>
+              <a onClick={()=>navigate('/swag')}>Swag</a>
             </div>
           </div>
           <div className='dropdown'>
             <span>Packages</span>
             <div className="dropdown-content">
-              <a onClick={() => navigate('/limousine/Airport')}>Tent Packages</a>
+              <a onClick={() => navigate('/tentpackages')}>Tent Packages</a>
               <a onClick={() => navigate('/limousine/Wedding')}>Tent & Liner Package</a>
               <a onClick={() => navigate('/limousine/Prom')}>Clear Top Packages</a>
               <a onClick={() => navigate('/limousine/Winery')}>Sailcloth Packages</a>
