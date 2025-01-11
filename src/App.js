@@ -24,10 +24,18 @@ import ClearTopPackages from './pages/ClearTopPackages/ClearTopPackages';
 import SailclothPackages from './pages/SailclothPackages/SailclothPackages';
 import RusticPackages from './pages/RusticPackages/RusticPackages';
 import LoungePackages from './pages/LoungePackages/LoungePackages';
+import TablesAndChairs from './pages/TablesAndChairs/TablesAndChairs';
+import Linens from './pages/Linens/Linens';
+import Lighting from './pages/Lighting/Lighting';
+import Flooring from './pages/Flooring/Flooring';
+import Bars from './pages/Bars/Bars';
+import BackdropsAndDraping from './pages/BackdropsAndDraping/BackdropsAndDraping';
+import AVStaging from './pages/AVStaging/AVStaging';
+import HeatingAndCooling from './pages/HeatingAndCooling/HeatingAndCooling';
 import Login from "./admin/login/Login.jsx";
-import  CarRental from "./admin/CarRental/CarRental.jsx";
-import  PartyRental from "./admin/partyRental/PartyRental.jsx";
-import  Users from "./admin/users/Users.jsx";
+import CarRental from "./admin/CarRental/CarRental.jsx";
+// import  PartyRental from "./admin/partyRental/PartyRental.jsx";
+// import  Users from "./admin/users/Users.jsx";
 
 
 
@@ -54,6 +62,14 @@ function App() {
         <Route path="/sailclothpackages" element={<SailclothPackages/>} />
         <Route path="/rusticpackages" element={<RusticPackages/>} />
         <Route path="/loungepackages" element={<LoungePackages/>} />
+        <Route path="/tablesandchairs" element={<TablesAndChairs/>} />
+        <Route path="/linens" element={<Linens/>} />
+        <Route path="/lighting" element={<Lighting/>} />
+        <Route path="/flooring" element={<Flooring/>} />
+        <Route path="/bars" element={<Bars/>} />
+        <Route path="/backdropsanddraping" element={<BackdropsAndDraping/>} />
+        <Route path="/avstaging" element={<AVStaging/>} />
+        <Route path="/heatingandcooling" element={<HeatingAndCooling/>} />
         <Route path="/faq" element={<FAQ/>} />
         <Route path="/admin/login" element={<Login/>} />
         <Route path="/admin/dashboard/car-rental" element={<CarRental/>} />

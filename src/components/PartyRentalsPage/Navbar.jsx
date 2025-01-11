@@ -96,14 +96,14 @@ const Navbar = () => {
           <div className='dropdown'>
             <span>Accessories</span>
             <div className="dropdown-content">
-              <a onClick={() => navigate('/limousine/Airport')}>Tables & Chairs</a>
-              <a onClick={() => navigate('/limousine/Wedding')}>Linens</a>
-              <a onClick={() => navigate('/limousine/Prom')}>Lighting</a>
-              <a onClick={() => navigate('/limousine/Winery')}>Flooring</a>
-              <a onClick={() => navigate('/limousine/Nights')}>Bars</a>
-              <a onClick={() => navigate('/limousine/Bachelor')}>Backdrops and Draping</a>
-              <a onClick={() => navigate('/limousine/Bachelor')}>AV & Staging</a>
-              <a onClick={() => navigate('/limousine/Bachelor')}>Heating And Cooling</a>
+              <a onClick={() => navigate('/tablesandchairs')}>Tables & Chairs</a>
+              <a onClick={() => navigate('/linens')}>Linens</a>
+              <a onClick={() => navigate('/lighting')}>Lighting</a>
+              <a onClick={() => navigate('/flooring')}>Flooring</a>
+              <a onClick={() => navigate('/bars')}>Bars</a>
+              <a onClick={() => navigate('/backdropsanddraping')}>Backdrops and Draping</a>
+              <a onClick={() => navigate('/avstaging')}>AV & Staging</a>
+              <a onClick={() => navigate('/heatingandcooling')}>Heating And Cooling</a>
             </div>
           </div>
           <div className='dropdown'>
