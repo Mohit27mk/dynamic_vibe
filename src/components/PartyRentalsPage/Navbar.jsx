@@ -70,11 +70,11 @@ const Navbar = () => {
             <span>Packages</span>
             <div className="dropdown-content">
               <a onClick={() => navigate('/tentpackages')}>Tent Packages</a>
-              <a onClick={() => navigate('/limousine/Wedding')}>Tent & Liner Package</a>
-              <a onClick={() => navigate('/limousine/Prom')}>Clear Top Packages</a>
-              <a onClick={() => navigate('/limousine/Winery')}>Sailcloth Packages</a>
-              <a onClick={() => navigate('/limousine/Nights')}>Rustic Packages</a>
-              <a onClick={() => navigate('/limousine/Bachelor')}>Lounge Packages</a>
+              <a onClick={() => navigate('/tentlinerpackages')}>Tent & Liner Package</a>
+              <a onClick={() => navigate('/cleartoppackages')}>Clear Top Packages</a>
+              <a onClick={() => navigate('/sailclothpackages')}>Sailcloth Packages</a>
+              <a onClick={() => navigate('/rusticpackages')}>Rustic Packages</a>
+              <a onClick={() => navigate('/loungepackages')}>Lounge Packages</a>
             </div>
           </div>
           <div className='dropdown'>
