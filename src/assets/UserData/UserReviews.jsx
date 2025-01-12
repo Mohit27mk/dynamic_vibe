@@ -1,4 +1,3 @@
-import react from 'react';
 import Photo1 from  '../images/passport1.jpg';
 import Photo2 from  '../images/passport2.jpg';
 import Photo3 from  '../images/passport3.jpg';

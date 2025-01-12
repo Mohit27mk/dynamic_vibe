@@ -2,10 +2,10 @@ import React, { useRef } from 'react';
 import './partyRentals.css';
 import AboutUs from '../../components/CarRentalsPage/AboutUs/AboutUs';
 import Services from '../../components/CarRentalsPage/Services/Services';
-import Reviews from '../../components/HomePage/Reviews/Reviews';
 import Footer from '../../components/CarRentalsPage/Footer/Footer';
 import TentPackages from '../../components/PartyRentalsPage/TentPackages';
 import Navbar from '../../components/PartyRentalsPage/Navbar';
+import TestimonialSwiper from '../../components/PartyRentalsPage/TestimonialSwiper';
 
 const PartyRentals = () => {
     const logoRef = useRef(null);
@@ -45,7 +45,8 @@ const PartyRentals = () => {
         <TentPackages />
       </div>
       <div ref={reviewsRef}>
-        <Reviews />
+        {/* <Reviews /> */}
+        <TestimonialSwiper />
       </div>
       <Footer
         scrollToSection={scrollToSection}
