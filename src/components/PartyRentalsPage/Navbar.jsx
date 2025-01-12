@@ -121,7 +121,7 @@ const Navbar = () => {
               <a onClick={() => navigate('/customfabrication')}>Custom Fabrication</a>
             </div>
           </div>
-          <span onClick={() => scrollToSection(reviewsRef)}>Reviews</span>
+          {/* <span onClick={() => scrollToSection(reviewsRef)}>Reviews</span> */}
           <span onClick={()=>navigate('/request')}>Quote Request</span> 
         </div>
       </section>
