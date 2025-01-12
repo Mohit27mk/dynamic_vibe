@@ -1,0 +1,245 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.dashboard-container {
+  display: flex;
+  position: relative;
+  height: 100vh; /* Ensures it takes the full screen height */
+}
+
+
+
+
+.sidebar {
+  width: 250px;
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow-y: auto;
+  transition: width 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.closed {
+  width: 80px;
+}
+
+.toggle-btn {
+  color: #121111dc;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 25px;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.c.toggle-btn.closed {
+  left: 20px;
+}
+
+/* For the open state, position the button to the right and remove 'left' */
+.toggle-btn.open {
+  margin-left: 220px;
+  left: unset; /* Remove left to prevent overlap */
+}
+
+
+
+
+
+.logo-container {
+  text-align: center;
+  margin: 20px;
+  background-color: #ff6600; /* Add a background color */
+  padding: 10px; /* Add some padding for spacing */
+  border-radius: 8px; /* Optional: Make it rounded */
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px;
+}
+
+
+
+.sidebar li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.sidebar li:hover {
+  color: #ff6600;   
+}
+
+.sidebar li.active {
+  color: #ff6600;
+  font-weight: bold;
+}
+
+.sidebar li .icon {
+  font-size: 40px;
+  margin-right: 15px;
+}
+
+.sidebar.closed li .icon {
+  margin-right: 0;
+  text-align: center;
+  flex: 1;
+}
+
+.sidebar.closed li span {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+}
+
+.sidebar li a {
+  display: flex; /* Ensure <a> aligns its children (icon + text) in a row */
+  align-items: center; /* Vertically align icon and text */
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit text color */
+  width: 100%; /* Make the link clickable over the entire list item */
+}
+
+.sidebar li span {
+  flex-grow: 1; /* Allow the text to grow if needed */
+  font-size: 20px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  margin-left: 250px;
+  transition: margin-left 0.3s ease;
+  background-color: lightgray;
+}
+
+.main-content.shrink {
+  margin-left: 80px;
+}
+
+/* Top Bar Styling */
+.top-bar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: lightgoldenrodyellow;
+padding: 10px 20px;
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+.top-bar h1 {
+font-size: 24px;
+color: #333;
+margin: 0;
+}
+
+.top-bar-right {
+display: flex;
+align-items: center;
+}
+
+.profile-icon {
+font-size: 30px;
+color: #555;
+margin-right: 20px;
+cursor: pointer;
+}
+
+.logout-button {
+background-color: #ff6600;
+color: #fff;
+border: none;
+padding: 10px 15px;
+font-size: 14px;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+background-color: #e55a00;
+}
+
+/* Page Content */
+.page-content {
+margin-top: 20px;
+}
+
+/* Page Content */
+.page-content {
+margin-top: 20px;
+}
+
+.contact-table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+}
+
+.contact-table th, .contact-table td {
+padding: 12px;
+text-align: left;
+border: 1px solid #ddd;
+}
+.contact-table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+}
+
+.contact-table th {
+background-color: #f4f4f4;
+font-weight: bold;
+}
+
+.contact-table tr:hover {
+background-color: #f9f9f9;
+}
+
+.contact-table button {
+padding: 6px 12px;
+background-color: #ff6600;
+color: white;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+margin-left: 10px;
+transition: background-color 0.3s ease;
+}
+
+.contact-table button:hover {
+background-color: #e55a00;
+}
+
+
