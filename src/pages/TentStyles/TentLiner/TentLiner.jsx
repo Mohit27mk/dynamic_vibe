@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 import { Tent } from 'lucide-react';
-import Navbar from '../../components/PartyRentalsPage/Navbar';
-import Footer from '../../components/Footer/Footer';
+import Navbar from '../../../components/PartyRentalsPage/Navbar';
+import Footer from '../../../components/Footer/Footer';
 
-const ClearTopTents = () => {
+const TentLiner = () => {
   const images = [
     "https://litentrentals.com/wp-content/uploads/2023/02/20x50-w-Window-Sidewallsjpg_resized-400x284.jpg",
     "https://litentrentals.com/wp-content/uploads/2023/02/pinkjpg_resized-400x284.jpg",
@@ -17,7 +17,7 @@ const ClearTopTents = () => {
   ];
   return (
     <>
-      <div className='HomeContainer bg-custom-gradient-2 w-screen min-h-screen overflow-x-hidden'>
+       <div className='HomeContainer bg-custom-gradient-2 w-screen min-h-screen overflow-x-hidden'>
       <div>
        <Navbar />
       </div>
@@ -27,10 +27,9 @@ const ClearTopTents = () => {
           <div className="flex items-center justify-center mb-4">
             <Tent className="h-12 w-12 text-blue-600" />
           </div>
-          <h1 className="text-4xl font-bold text-white mb-6">Clear Top Tents</h1>
+          <h1 className="text-4xl font-bold text-white mb-6">Tent Liner</h1>
           <p className="max-w-3xl mx-auto text-lg text-white leading-relaxed">
-          Our clear top tents have become one of our showstoppers! When you don’t want to exclude the beauty of an event site, a clear top tent is the perfect solution to bring it all in.
-          Clear top tents are designed to let nature’s backdrop be part of the event while still providing overhead protection. Evening and night events are especially magical when adding lighting to complement the night sky. These tents can be installed on any surface, and there are no center poles.
+          Our tent liner and pole covers will add a finishing touch of sophistication and elegance to any event. These décor elements are used as a stylish way to hide the tent’s framework and soften the atmosphere while providing a beautiful setting to impress your guests!
           </p>
         </div>
 
@@ -61,4 +60,4 @@ const ClearTopTents = () => {
   )
 }
 
-export default ClearTopTents
+export default TentLiner

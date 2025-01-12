@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 import { Tent } from 'lucide-react';
-import Navbar from '../../components/PartyRentalsPage/Navbar';
-import Footer from '../../components/Footer/Footer';
+import Navbar from '../../../components/PartyRentalsPage/Navbar';
+import Footer from '../../../components/Footer/Footer';
 
-const Skylight = () => {
+const ClearTopTents = () => {
   const images = [
     "https://litentrentals.com/wp-content/uploads/2023/02/20x50-w-Window-Sidewallsjpg_resized-400x284.jpg",
     "https://litentrentals.com/wp-content/uploads/2023/02/pinkjpg_resized-400x284.jpg",
@@ -27,9 +27,10 @@ const Skylight = () => {
           <div className="flex items-center justify-center mb-4">
             <Tent className="h-12 w-12 text-blue-600" />
           </div>
-          <h1 className="text-4xl font-bold text-white mb-6">Skylight</h1>
+          <h1 className="text-4xl font-bold text-white mb-6">Clear Top Tents</h1>
           <p className="max-w-3xl mx-auto text-lg text-white leading-relaxed">
-          With an ample selection of shapes and sizes, skylight tents are the perfect choice for everything from intimate gatherings to large-scale events. But what truly sets them apart is their show-stopping skylight roof. This unique feature allows natural light to pour into the event space, creating a beautiful and vibrant atmosphere that your guests will love.
+          Our clear top tents have become one of our showstoppers! When you don’t want to exclude the beauty of an event site, a clear top tent is the perfect solution to bring it all in.
+          Clear top tents are designed to let nature’s backdrop be part of the event while still providing overhead protection. Evening and night events are especially magical when adding lighting to complement the night sky. These tents can be installed on any surface, and there are no center poles.
           </p>
         </div>
 
@@ -60,4 +61,4 @@ const Skylight = () => {
   )
 }
 
-export default Skylight
+export default ClearTopTents

@@ -1,9 +1,9 @@
 import React from 'react'
 import { Tent } from 'lucide-react';
-import Navbar from '../../components/PartyRentalsPage/Navbar';
-import Footer from '../../components/Footer/Footer';
+import Navbar from '../../../components/PartyRentalsPage/Navbar';
+import Footer from '../../../components/Footer/Footer';
 
-const WhiteFrameTents = () => {
+const Skylight = () => {
   const images = [
     "https://litentrentals.com/wp-content/uploads/2023/02/20x50-w-Window-Sidewallsjpg_resized-400x284.jpg",
     "https://litentrentals.com/wp-content/uploads/2023/02/pinkjpg_resized-400x284.jpg",
@@ -17,7 +17,7 @@ const WhiteFrameTents = () => {
   ];
   return (
     <>
-    <div className='HomeContainer bg-custom-gradient-2 w-screen min-h-screen overflow-x-hidden'>
+      <div className='HomeContainer bg-custom-gradient-2 w-screen min-h-screen overflow-x-hidden'>
       <div>
        <Navbar />
       </div>
@@ -27,13 +27,9 @@ const WhiteFrameTents = () => {
           <div className="flex items-center justify-center mb-4">
             <Tent className="h-12 w-12 text-blue-600" />
           </div>
-          <h1 className="text-4xl font-bold text-white mb-6">White Frame Tents</h1>
+          <h1 className="text-4xl font-bold text-white mb-6">Skylight</h1>
           <p className="max-w-3xl mx-auto text-lg text-white leading-relaxed">
-            White frame tents are a popular choice for many outdoor events and gatherings. 
-            The sturdy aluminum frames provide a secure and stable structure that can be 
-            installed on any surface. There are no poles in the center of the tent, only 
-            around the perimeter. With the ability to accommodate a variety of configurations, 
-            our white frame tents can offer endless possibilities for your event!
+          With an ample selection of shapes and sizes, skylight tents are the perfect choice for everything from intimate gatherings to large-scale events. But what truly sets them apart is their show-stopping skylight roof. This unique feature allows natural light to pour into the event space, creating a beautiful and vibrant atmosphere that your guests will love.
           </p>
         </div>
 
@@ -59,9 +55,9 @@ const WhiteFrameTents = () => {
       <div>
         <Footer/>
       </div>
-    </div> 
+      </div>
     </>
   )
 }
 
-export default WhiteFrameTents
+export default Skylight
