@@ -36,6 +36,11 @@ import { RusticInventory } from './pages/RusticInventory/RusticInventory';
 import RusticGallery from './pages/RusticGallery/RusticGallery';
 import LoungeInventory from './pages/LoungeInventory/LoungeInventory';
 import LoungeGallery from './pages/LoungeGallery/LoungeGallery';
+import DecorPackages from './pages/DecorPackages/DecorPackages';
+import DecorInventory from './pages/DecorInventory/DecorInventory';
+import DecorGallery from './pages/DecorGallery/DecorGallery';
+import EventDesign from './pages/Design/EventDesign/EventDesign';
+import CustomFabrication from './pages/Design/CustomFabrication/CustomFabrication';
 import Login from "./admin/login/Login.jsx";
 import CarRental from "./admin/CarRental/CarRental.jsx";
 // import  PartyRental from "./admin/partyRental/PartyRental.jsx";
@@ -78,6 +83,11 @@ function App() {
         <Route path="/rusticgallery" element={<RusticGallery/>} />
         <Route path="/loungeinventory" element={<LoungeInventory/>} />
         <Route path="/loungegallery" element={<LoungeGallery/>} />
+        <Route path="/decorpackages" element={<DecorPackages/>} />
+        <Route path="/decorinventory" element={<DecorInventory/>} />
+        <Route path="/decorgallery" element={<DecorGallery/>} />
+        <Route path="/eventdesign" element={<EventDesign/>} />
+        <Route path="/customfabrication" element={<CustomFabrication/>} />
         <Route path="/faq" element={<FAQ/>} />
         <Route path="/admin/login" element={<Login/>} />
         <Route path="/admin/dashboard/car-rental" element={<CarRental/>} />

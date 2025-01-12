@@ -109,16 +109,16 @@ const Navbar = () => {
           <div className='dropdown'>
             <span>Décor</span>
             <div className="dropdown-content">
-              <a onClick={() => navigate('/limousine/Airport')}>Décor Inventory</a>
-              <a onClick={() => navigate('/limousine/Wedding')}>Décor Packages</a>
-              <a onClick={() => navigate('/limousine/Prom')}>Décor Gallery</a>
+              <a onClick={() => navigate('/decorinventory')}>Décor Inventory</a>
+              <a onClick={() => navigate('/decorpackages')}>Décor Packages</a>
+              <a onClick={() => navigate('/decorgallery')}>Décor Gallery</a>
             </div>
           </div>
           <div className='dropdown'>
             <span>Design</span>
             <div className="dropdown-content">
-              <a onClick={() => navigate('/limousine/Airport')}>Event Design</a>
-              <a onClick={() => navigate('/limousine/Wedding')}>Custom Fabrication</a>
+              <a onClick={() => navigate('/eventdesign')}>Event Design</a>
+              <a onClick={() => navigate('/customfabrication')}>Custom Fabrication</a>
             </div>
           </div>
           <span onClick={() => scrollToSection(reviewsRef)}>Reviews</span>
