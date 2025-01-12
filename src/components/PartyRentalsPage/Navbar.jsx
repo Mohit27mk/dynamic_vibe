@@ -80,17 +80,17 @@ const Navbar = () => {
           <div className='dropdown'>
             <span>Rustic</span>
             <div className="dropdown-content">
-              <a onClick={() => navigate('/limousine/Airport')}>Rustic Inventory</a>
-              <a onClick={() => navigate('/limousine/Wedding')}>Rustic Packages</a>
-              <a onClick={() => navigate('/limousine/Prom')}>Rustic Gallery</a>
+              <a onClick={() => navigate('/rusticinventory')}>Rustic Inventory</a>
+              <a onClick={() => navigate('/rusticpackages')}>Rustic Packages</a>
+              <a onClick={() => navigate('/rusticgallery')}>Rustic Gallery</a>
             </div>
           </div>
           <div className='dropdown'>
             <span>Lounge</span>
             <div className="dropdown-content">
-              <a onClick={() => navigate('/limousine/Airport')}>Lounge Inventory</a>
-              <a onClick={() => navigate('/limousine/Wedding')}>Lounge Packages</a>
-              <a onClick={() => navigate('/limousine/Prom')}>Lounge Gallery</a>
+              <a onClick={() => navigate('/loungeinventory')}>Lounge Inventory</a>
+              <a onClick={() => navigate('/loungepackages')}>Lounge Packages</a>
+              <a onClick={() => navigate('/loungegallery')}>Lounge Gallery</a>
             </div>
           </div>
           <div className='dropdown'>
@@ -119,12 +119,6 @@ const Navbar = () => {
             <div className="dropdown-content">
               <a onClick={() => navigate('/limousine/Airport')}>Event Design</a>
               <a onClick={() => navigate('/limousine/Wedding')}>Custom Fabrication</a>
-              <a onClick={() => navigate('/limousine/Prom')}>Lighting</a>
-              <a onClick={() => navigate('/limousine/Winery')}>Flooring</a>
-              <a onClick={() => navigate('/limousine/Nights')}>Bars</a>
-              <a onClick={() => navigate('/limousine/Bachelor')}>Backdrops and Draping</a>
-              <a onClick={() => navigate('/limousine/Bachelor')}>AV & Staging</a>
-              <a onClick={() => navigate('/limousine/Bachelor')}>Heating And Cooling</a>
             </div>
           </div>
           <span onClick={() => scrollToSection(reviewsRef)}>Reviews</span>

@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from '../../components/PartyRentalsPage/Navbar';
-import Footer from '../../components/Footer/Footer';
+import Navbar from '../../../components/PartyRentalsPage/Navbar';
+import Footer from '../../../components/Footer/Footer';
 
 const Bars = () => {
   const barOptions = [

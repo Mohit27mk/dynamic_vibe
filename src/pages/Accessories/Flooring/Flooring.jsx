@@ -1,7 +1,7 @@
 import React from 'react';
-import Navbar from '../../components/PartyRentalsPage/Navbar';
-import Footer from '../../components/Footer/Footer';
-import Features from '../../components/PartyRentalsPage/Features';
+import Navbar from '../../../components/PartyRentalsPage/Navbar';
+import Footer from '../../../components/Footer/Footer';
+import Features from '../../../components/PartyRentalsPage/Features';
 
 const Flooring = () => {
   const flooringOptions = [
