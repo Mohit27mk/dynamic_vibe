@@ -5,7 +5,7 @@ import logo from "../../assets/images/logo.png"
 const Navbar = () => {
     const [isFixed, setIsFixed] = useState(false);
     const logoRef = useRef(null); // Refs for sections
-    const reviewsRef = useRef(null);
+    // const reviewsRef = useRef(null);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -31,11 +31,11 @@ const Navbar = () => {
         };
       }, []);
     
-      const scrollToSection = (ref) => {
-        if (ref.current) {
-          ref.current.scrollIntoView({ behavior: 'smooth' });
-        }
-      };
+      // const scrollToSection = (ref) => {
+      //   if (ref.current) {
+      //     ref.current.scrollIntoView({ behavior: 'smooth' });
+      //   }
+      // };
 
   return (
     <>

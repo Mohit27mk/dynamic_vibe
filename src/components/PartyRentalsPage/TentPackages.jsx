@@ -37,7 +37,11 @@ const TentPackages = () => {
   return (
     <>
       <section id="Fleets" className="FleetContainer p-6 h-full w-11/12 m-auto my-6 bg-[#000d2a] rounded-xl relative">
-        <h2 className="text-white seHeading text-gradient text-2xl md:text-3xl text-center mb-6">Tent Packages</h2>
+        <h2 className="text-white seHeading text-gradient text-2xl md:text-3xl text-center mb-6">We Have a Variety of Elegant Tent Styles for Your Special Event</h2>
+        {/* <div className="bg-red-600 text-white w-full px-6 py-3 text-2xl font-bold mb-8">
+            $100 OFF ANY TENT PACKAGE
+            <div className="text-sm font-normal">EXPIRES: 1/31</div>
+        </div> */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
           {tentData.map((tent, index) => (
             <div key={index} className="relative rounded-lg overflow-hidden shadow-lg text-white transform transition-transform duration-300 hover:scale-105">
