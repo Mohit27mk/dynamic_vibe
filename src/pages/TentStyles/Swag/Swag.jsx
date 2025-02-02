@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 import { Tent } from 'lucide-react';
-import Navbar from '../../components/PartyRentalsPage/Navbar';
-import Footer from '../../components/Footer/Footer';
+import Navbar from '../../../components/PartyRentalsPage/Navbar';
+import Footer from '../../../components/Footer/Footer';
 
-const TentLiner = () => {
+const Swag = () => {
   const images = [
     "https://litentrentals.com/wp-content/uploads/2023/02/20x50-w-Window-Sidewallsjpg_resized-400x284.jpg",
     "https://litentrentals.com/wp-content/uploads/2023/02/pinkjpg_resized-400x284.jpg",
@@ -17,7 +17,7 @@ const TentLiner = () => {
   ];
   return (
     <>
-       <div className='HomeContainer bg-custom-gradient-2 w-screen min-h-screen overflow-x-hidden'>
+      <div className='HomeContainer bg-custom-gradient-2 w-screen min-h-screen overflow-x-hidden'>
       <div>
        <Navbar />
       </div>
@@ -27,9 +27,9 @@ const TentLiner = () => {
           <div className="flex items-center justify-center mb-4">
             <Tent className="h-12 w-12 text-blue-600" />
           </div>
-          <h1 className="text-4xl font-bold text-white mb-6">Tent Liner</h1>
+          <h1 className="text-4xl font-bold text-white mb-6">Swag</h1>
           <p className="max-w-3xl mx-auto text-lg text-white leading-relaxed">
-          Our tent liner and pole covers will add a finishing touch of sophistication and elegance to any event. These décor elements are used as a stylish way to hide the tent’s framework and soften the atmosphere while providing a beautiful setting to impress your guests!
+          Choosing to add swag to your tent will help to create a one-of-a-kind backdrop that will leave a lasting impression on your guests! We have multiple colors to choose from to match your event’s ambiance and style.
           </p>
         </div>
 
@@ -60,4 +60,4 @@ const TentLiner = () => {
   )
 }
 
-export default TentLiner
+export default Swag

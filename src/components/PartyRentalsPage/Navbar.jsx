@@ -70,64 +70,58 @@ const Navbar = () => {
             <span>Packages</span>
             <div className="dropdown-content">
               <a onClick={() => navigate('/tentpackages')}>Tent Packages</a>
-              <a onClick={() => navigate('/limousine/Wedding')}>Tent & Liner Package</a>
-              <a onClick={() => navigate('/limousine/Prom')}>Clear Top Packages</a>
-              <a onClick={() => navigate('/limousine/Winery')}>Sailcloth Packages</a>
-              <a onClick={() => navigate('/limousine/Nights')}>Rustic Packages</a>
-              <a onClick={() => navigate('/limousine/Bachelor')}>Lounge Packages</a>
+              <a onClick={() => navigate('/tentlinerpackages')}>Tent & Liner Package</a>
+              <a onClick={() => navigate('/cleartoppackages')}>Clear Top Packages</a>
+              <a onClick={() => navigate('/sailclothpackages')}>Sailcloth Packages</a>
+              <a onClick={() => navigate('/rusticpackages')}>Rustic Packages</a>
+              <a onClick={() => navigate('/loungepackages')}>Lounge Packages</a>
             </div>
           </div>
           <div className='dropdown'>
             <span>Rustic</span>
             <div className="dropdown-content">
-              <a onClick={() => navigate('/limousine/Airport')}>Rustic Inventory</a>
-              <a onClick={() => navigate('/limousine/Wedding')}>Rustic Packages</a>
-              <a onClick={() => navigate('/limousine/Prom')}>Rustic Gallery</a>
+              <a onClick={() => navigate('/rusticinventory')}>Rustic Inventory</a>
+              <a onClick={() => navigate('/rusticpackages')}>Rustic Packages</a>
+              <a onClick={() => navigate('/rusticgallery')}>Rustic Gallery</a>
             </div>
           </div>
           <div className='dropdown'>
             <span>Lounge</span>
             <div className="dropdown-content">
-              <a onClick={() => navigate('/limousine/Airport')}>Lounge Inventory</a>
-              <a onClick={() => navigate('/limousine/Wedding')}>Lounge Packages</a>
-              <a onClick={() => navigate('/limousine/Prom')}>Lounge Gallery</a>
+              <a onClick={() => navigate('/loungeinventory')}>Lounge Inventory</a>
+              <a onClick={() => navigate('/loungepackages')}>Lounge Packages</a>
+              <a onClick={() => navigate('/loungegallery')}>Lounge Gallery</a>
             </div>
           </div>
           <div className='dropdown'>
             <span>Accessories</span>
             <div className="dropdown-content">
-              <a onClick={() => navigate('/limousine/Airport')}>Tables & Chairs</a>
-              <a onClick={() => navigate('/limousine/Wedding')}>Linens</a>
-              <a onClick={() => navigate('/limousine/Prom')}>Lighting</a>
-              <a onClick={() => navigate('/limousine/Winery')}>Flooring</a>
-              <a onClick={() => navigate('/limousine/Nights')}>Bars</a>
-              <a onClick={() => navigate('/limousine/Bachelor')}>Backdrops and Draping</a>
-              <a onClick={() => navigate('/limousine/Bachelor')}>AV & Staging</a>
-              <a onClick={() => navigate('/limousine/Bachelor')}>Heating And Cooling</a>
+              <a onClick={() => navigate('/tablesandchairs')}>Tables & Chairs</a>
+              <a onClick={() => navigate('/linens')}>Linens</a>
+              <a onClick={() => navigate('/lighting')}>Lighting</a>
+              <a onClick={() => navigate('/flooring')}>Flooring</a>
+              <a onClick={() => navigate('/bars')}>Bars</a>
+              <a onClick={() => navigate('/backdropsanddraping')}>Backdrops and Draping</a>
+              <a onClick={() => navigate('/avstaging')}>AV & Staging</a>
+              <a onClick={() => navigate('/heatingandcooling')}>Heating And Cooling</a>
             </div>
           </div>
           <div className='dropdown'>
             <span>Décor</span>
             <div className="dropdown-content">
-              <a onClick={() => navigate('/limousine/Airport')}>Décor Inventory</a>
-              <a onClick={() => navigate('/limousine/Wedding')}>Décor Packages</a>
-              <a onClick={() => navigate('/limousine/Prom')}>Décor Gallery</a>
+              <a onClick={() => navigate('/decorinventory')}>Décor Inventory</a>
+              <a onClick={() => navigate('/decorpackages')}>Décor Packages</a>
+              <a onClick={() => navigate('/decorgallery')}>Décor Gallery</a>
             </div>
           </div>
           <div className='dropdown'>
             <span>Design</span>
             <div className="dropdown-content">
-              <a onClick={() => navigate('/limousine/Airport')}>Event Design</a>
-              <a onClick={() => navigate('/limousine/Wedding')}>Custom Fabrication</a>
-              <a onClick={() => navigate('/limousine/Prom')}>Lighting</a>
-              <a onClick={() => navigate('/limousine/Winery')}>Flooring</a>
-              <a onClick={() => navigate('/limousine/Nights')}>Bars</a>
-              <a onClick={() => navigate('/limousine/Bachelor')}>Backdrops and Draping</a>
-              <a onClick={() => navigate('/limousine/Bachelor')}>AV & Staging</a>
-              <a onClick={() => navigate('/limousine/Bachelor')}>Heating And Cooling</a>
+              <a onClick={() => navigate('/eventdesign')}>Event Design</a>
+              <a onClick={() => navigate('/customfabrication')}>Custom Fabrication</a>
             </div>
           </div>
-          <span onClick={() => scrollToSection(reviewsRef)}>Reviews</span>
+          {/* <span onClick={() => scrollToSection(reviewsRef)}>Reviews</span> */}
           <span onClick={()=>navigate('/request')}>Quote Request</span> 
         </div>
       </section>
