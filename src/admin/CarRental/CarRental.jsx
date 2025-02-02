@@ -34,7 +34,7 @@ const fetchSalespersons = async () => {
   setLoading(true);
   setError(null);
   try { 
-    const response = await fetch('http://localhost:5000/api/v1/admin/user?role=SALESMAN', {
+    const response = await fetch('http://[::1]:5000/api/v1/admin/user?role=SALESMAN', {
       headers: {
         'Content-Type': 'application/json',
         Authorization: `Bearer ${token.Authorization}`,
@@ -79,7 +79,7 @@ const handleAssign = async () => {
     try {
      
 
-      const response = await fetch('http://localhost:5000/api/v1/admin/car-assign-user', {
+      const response = await fetch('http://[::1]:5000/api/v1/admin/car-assign-user', {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
@@ -117,7 +117,7 @@ const handleAssign = async () => {
 
   const fetchContactData = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/v1/admin/car', {
+      const response = await fetch('http://[::1]:5000/api/v1/admin/car', {
          headers: {
           'Content-Type': 'application/json',
           Authorization: `Bearer ${token.Authorization}`,
@@ -153,7 +153,7 @@ const handleAssign = async () => {
   const handleStatusChange = async (contactId, newStatus) => {
     try {
       // Update status on the server
-      const response = await fetch('http://localhost:5000/api/v1/admin/car-status', {
+      const response = await fetch('http://[::1]:5000/api/v1/admin/car-status', {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',

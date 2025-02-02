@@ -20,7 +20,7 @@ const Login = () => {
 
     try {
       // Replace with your actual API endpoint
-      const apiUrl = "http://localhost:5000/api/v1/admin/email-login";
+      const apiUrl = "http://[::1]:5000/api/v1/admin/email-login";
 
       // Make the API call
       const response = await axios.post(apiUrl, {

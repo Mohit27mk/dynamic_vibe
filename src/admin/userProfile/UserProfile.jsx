@@ -16,7 +16,7 @@ token = JSON.parse(tokenString);
 
   useEffect(() => {
     // Fetch user data from the server
-    axios.get(`http://localhost:5000/api/v1/admin/user?login=true`,{headers: {
+    axios.get(`http://[::1]:5000/api/v1/admin/user?login=true`,{headers: {
         'Authorization': `Bearer ${token.Authorization}`}})
       .then(response => {
         setUserData(response.data.data[0]);
@@ -32,7 +32,7 @@ token = JSON.parse(tokenString);
     // Update user data on the server'
     const updatedData = { ...data, id: userData.id };
     console.log(updatedData);
-    axios.post('http://localhost:5000/api/v1/admin/user', updatedData,{headers: {
+    axios.post('http://[::1]:5000/api/v1/admin/user', updatedData,{headers: {
         'Authorization': `Bearer ${token.Authorization}`}})
       .then(response => {
         alert('Profile updated successfully!');
